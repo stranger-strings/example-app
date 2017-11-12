@@ -15,4 +15,10 @@ class ExamplesController < ApplicationController
     end
     render json: {lotto_numbers: numbers}
   end
+
+  def counter_method
+    count = 0
+    count = count + 1   # does not work
+    render json: {visit_count: count}
+  end
 end
